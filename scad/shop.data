@@ -1,0 +1,189 @@
+// Shop slab ------------------------------------------------
+slab_width = 19.5 * 12;
+slab_depth = 18 * 12;
+slab_thickness = 6;
+slab_tpos = [0,0,-slab_thickness];
+
+// Ham workbench ---------------------------------------------
+wb1_width = 96;
+wb1_depth = 30;
+wb1_height = 30;
+wb1_wall_offset = 2;
+
+wb1_x_offset = wb1_wall_offset  + wb1_depth;
+wb1_y_offset = slab_width - wb1_wall_offset - wb1_width;
+
+wb1_tpos = [wb1_x_offset, wb1_y_offset, 0];
+wb1_rpos = [0, 0, 90];
+
+// Model workbench --------------------------------------------
+wb2_width = 74;
+wb2_depth = 30;
+wb2_height = 30;
+wb2_wall_offset = 4;
+wb2_side_offset = 12;
+
+wb2_x_offset = wb2_wall_offset + wb2_depth;
+wb2_y_offset = wb2_side_offset;
+
+wb2_tpos = [wb2_x_offset, wb2_y_offset, 0];
+wb2_rpos = [0, 0, 90];
+
+// Craftsman tool box -----------------------------------------
+tb_width = 27;
+tb_depth = 18;
+tb_height = 60;
+
+tb_x_offset = 69;
+tb_y_offset = slab_width - 4 - tb_depth;
+
+tb_tpos = [tb_x_offset, tb_y_offset, 0];
+tb_rpos = [0,0,0];
+
+// Craftsman workbench ----------------------------------------
+wb3_width = 72;
+wb3_depth = 24;
+wb3_height = 36;
+
+wb3_x_offset = 2;
+wb3_y_offset = 3.5;
+
+wb3_tpos = [
+    slab_depth - wb3_y_offset - wb3_width,
+    slab_width - wb3_x_offset - wb3_depth,
+    0
+];
+wb3_rpos = [0, 0, 0];
+
+
+// bookcase ----------------------------------------------------
+bk_width = 34.5;
+bk_depth = 12.5;
+bk_height = 60;
+
+bk_x_offset = 40 + bk_width;
+bk_y_offset = slab_width - 2 - wb1_width;
+
+bk_tpos = [bk_x_offset, bk_y_offset, 0];
+bk_rpos = [0, 0, 180];
+
+// printer shelf unit -------------------------------------------
+pr_width = 24;
+pr_depth = 18;
+pr_height = 36;
+
+pr_x_offset = 4 + pr_depth;
+pr_y_offset = wb2_y_offset + wb2_width + 4;
+
+pr_tpos = [pr_x_offset, pr_y_offset, 0];
+pr_rpos = [0, 0, 90];
+
+// table saw ----------------------------------------------------
+ts_width = 46;
+ts_depth = 31;
+ts_height = 30;
+
+ts_x_offset = slab_depth - 12 - ts_depth;
+ts_y_offset = slab_width - 45;
+
+ts_tpos = [ts_x_offset, ts_y_offset, 0];
+ts_rpos = [0, 0, -90];
+
+// band saw ------------------------------------------------------
+bs_width = 37;
+bs_depth = 25;
+bs_height = 50;
+
+bs_x_offset = slab_depth - 12 - bs_depth - ts_depth;
+bs_y_offset = slab_width - 45;
+
+bs_tpos = [bs_x_offset, bs_y_offset, 0];
+bs_rpos = [0, 0, -90];
+
+// model table ---------------------------------------------------
+mt_width = 71;
+mt_depth = 29.5;
+mt_height = 30;
+
+mt_x_offset = 40;
+mt_y_offset = bk_y_offset - mt_depth -bk_depth;
+
+mt_tpos = [mt_x_offset, mt_y_offset, 0];
+mt_rpos = [0, 0, 0];
+
+// model shelf unit ---------------------------------------------
+ms_width = 36.5;
+ms_depth = 19;
+ms_height = 60;
+
+ms_x_offset = 40;
+ms_y_offset = 4;
+
+ms_tpos = [ms_x_offset, ms_y_offset, 0];
+ms_rpos = [0, 0, 0];
+
+// parts case unit ------------------------------------------------
+pc_width = 34;
+pc_depth = 13;
+pc_height = 30;
+
+pc_x_offset = 81 + pc_depth;
+pc_y_offset = 4;
+
+pc_tpos = [pc_x_offset, pc_y_offset, 0];
+pc_rpos = [0, 0, 90];
+
+// Byrnes saw table -----------------------------------------------
+st_width = 36;
+st_depth = 24;
+st_height = 30;
+
+st_x_offset = 96;
+st_y_offset = 4;
+
+st_tpos = [st_x_offset, st_y_offset, 0];
+st_rpos = [0, 0, 0];
+
+// Parts shelf 1 -------------------------------------------------
+ps1_width = 48;
+ps1_depth = 24;
+ps1_height = 60;
+
+ps1_x_offset = slab_depth - 28 - ps1_width;
+ps1_y_offset = 4;
+
+ps1_tpos = [ps1_x_offset, ps1_y_offset, 0];
+ps1_rpos = [0, 0, 0];
+
+// Parts shelf 2 -------------------------------------------------
+ps2_width = 36;
+ps2_depth = 18;
+ps2_height = 60;
+
+ps2_x_offset = slab_depth - 28;
+ps2_y_offset = ps2_depth + 4;
+
+ps2_tpos = [ps2_x_offset, ps2_y_offset, 0];
+ps2_rpos = [0, 0, 90];
+
+// Ham shelf ----------------------------------------------------
+hs_width = 36;
+hs_depth = 18;
+hs_height = 60;
+
+hs_x_offset = 4;
+hs_y_offset = slab_width - 2 - wb1_width - hs_depth;
+
+hs_tpos = [hs_x_offset, hs_y_offset, 0];
+hs_rpos = [0, 0, 0];
+
+// side door ----------------------------------------------------
+sd_width = 32;
+sd_depth = 2;
+sd_height = 80;
+
+sd_x_offset = 103;
+sd_y_offset = slab_width;
+
+sd_tpos = [sd_x_offset, sd_y_offset, 0];
+sd_rpos = [0, 0, 0];

@@ -1,0 +1,27 @@
+# Mac
+.DS_Store
+
+# Vim
+*~
+*.swp
+
+# PyCharm
+.idea
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+instance
+
+# pytest
+.pytest_cache/
+.coverage
+/htmlcov/
+
+# pypi
+dist/
+build/
+*.egg-info/
+
